@@ -1,4 +1,7 @@
 {
+    "bordercloud/sparql": {
+        "version": "2.0.9"
+    },
     "psr/cache": {
         "version": "2.0.0"
     },

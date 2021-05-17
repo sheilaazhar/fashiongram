@@ -1,0 +1,1768 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY fashiongram "http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:fashiongram="http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#">
+    <Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/fashiongram"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#dimilikiTren -->
+
+    <ObjectProperty rdf:about="&fashiongram;dimilikiTren">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&fashiongram;Tren"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#melakukan -->
+
+    <ObjectProperty rdf:about="&fashiongram;melakukan">
+        <rdfs:range rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:domain rdf:resource="&fashiongram;Produsen"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#memilikiTren -->
+
+    <ObjectProperty rdf:about="&fashiongram;memilikiTren">
+        <rdfs:range rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:domain rdf:resource="&fashiongram;Tren"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#mencari -->
+
+    <ObjectProperty rdf:about="&fashiongram;mencari">
+        <rdfs:domain rdf:resource="&fashiongram;Customer"/>
+        <rdfs:range rdf:resource="&fashiongram;Tren"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Bahan -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Bahan">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Jenis -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Jenis">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Model -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Model">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tahun -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Tahun">
+        <rdfs:domain rdf:resource="&fashiongram;Tren"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Warna -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Warna">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Aksesoris -->
+
+    <Class rdf:about="&fashiongram;Aksesoris">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Celana -->
+
+    <Class rdf:about="&fashiongram;Celana">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Customer -->
+
+    <Class rdf:about="&fashiongram;Customer">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Person"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Kaos -->
+
+    <Class rdf:about="&fashiongram;Kaos">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Kemeja -->
+
+    <Class rdf:about="&fashiongram;Kemeja">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Outer -->
+
+    <Class rdf:about="&fashiongram;Outer">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Person -->
+
+    <Class rdf:about="&fashiongram;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi -->
+
+    <Class rdf:about="&fashiongram;Produksi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produsen -->
+
+    <Class rdf:about="&fashiongram;Produsen">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Person"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Sepatu -->
+
+    <Class rdf:about="&fashiongram;Sepatu">
+        <rdfs:subClassOf rdf:resource="&fashiongram;Produksi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren -->
+
+    <Class rdf:about="&fashiongram;Tren"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi01 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi01">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Model>Oversized boyfriend blazer</fashiongram:Model>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Warna>Powder blue, charcoal, neutrals</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi02 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi02">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Mantel</fashiongram:Model>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Warna>Coklat Muda</fashiongram:Warna>
+        <fashiongram:Bahan>Wool</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi03 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi03">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Kain Rajut</fashiongram:Bahan>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Warna>Pastel</fashiongram:Warna>
+        <fashiongram:Model>Sweet Cropped Cardigans</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren03"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi04 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi04">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Kuning</fashiongram:Warna>
+        <fashiongram:Model>Small Clutch Bag</fashiongram:Model>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren04"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi05 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi05">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Model>Fringing Bag</fashiongram:Model>
+        <fashiongram:Warna>Dark Hue</fashiongram:Warna>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren05"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi06 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi06">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Nylon</fashiongram:Bahan>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Model>Baguette Bag</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren06"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi07 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi07">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam</fashiongram:Warna>
+        <fashiongram:Model>Masker</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren07"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi08 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi08">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Satin</fashiongram:Bahan>
+        <fashiongram:Warna>Motif Bunga</fashiongram:Warna>
+        <fashiongram:Model>Head Scarf</fashiongram:Model>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren08"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi09 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi09">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Canvas</fashiongram:Bahan>
+        <fashiongram:Model>Bucket Hat</fashiongram:Model>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren09"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi10 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi10">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Model>Boots</fashiongram:Model>
+        <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi11 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi11">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Bahan>Suede</fashiongram:Bahan>
+        <fashiongram:Model>Sky-high Platforms</fashiongram:Model>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Warna>Bold</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi12 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi12">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Model>Retro Sneaker</fashiongram:Model>
+        <fashiongram:Warna>Netral</fashiongram:Warna>
+        <fashiongram:Bahan>Suede</fashiongram:Bahan>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren12"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi13 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi13">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Model>Clogs</fashiongram:Model>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Bahan>Kayu</fashiongram:Bahan>
+        <fashiongram:Warna>Cream</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren13"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi14 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi14">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Cotton dan Fleece</fashiongram:Bahan>
+        <fashiongram:Model>Jogger Sweet Pants</fashiongram:Model>
+        <fashiongram:Warna>Pastel</fashiongram:Warna>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren14"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi15 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi15">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Denim</fashiongram:Bahan>
+        <fashiongram:Model>Baggie Jeans</fashiongram:Model>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Warna>Jeans</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren15"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi16 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi16">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Model>Tartan Pants</fashiongram:Model>
+        <fashiongram:Bahan>Flanel</fashiongram:Bahan>
+        <fashiongram:Warna>Merah</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren16"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi17 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi17">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Beige</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton Drill/Twill</fashiongram:Bahan>
+        <fashiongram:Model>Chinos</fashiongram:Model>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren17"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi18 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi18">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Coklat Muda</fashiongram:Warna>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Model>Cargo Pants</fashiongram:Model>
+        <fashiongram:Bahan>Cotton Twill Stretch</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren18"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi19 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi19">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Shirt Jacket</fashiongram:Model>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Bahan>Flanel</fashiongram:Bahan>
+        <fashiongram:Warna>Plaid</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren19"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi20 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi20">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Bahan>Fleece</fashiongram:Bahan>
+        <fashiongram:Model>Stripes Shirt</fashiongram:Model>
+        <fashiongram:Warna>Vertical Stripes</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren20"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi21 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi21">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Model>Camp Collar Shirts</fashiongram:Model>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Bahan>Cotton Royal Cutting</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren21"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi22 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi22">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam dan Pastel</fashiongram:Warna>
+        <fashiongram:Model>Puff Sleeves</fashiongram:Model>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi23 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi23">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Tiger Stripes</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren23"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi24 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi24">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Oversized Sleeves</fashiongram:Model>
+        <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren24"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi25 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi25">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Biru, Merah</fashiongram:Warna>
+        <fashiongram:Model>Blazer</fashiongram:Model>
+        <fashiongram:Bahan>Suit</fashiongram:Bahan>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren25"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi26 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi26">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Hitam, Biru, Abu</fashiongram:Warna>
+        <fashiongram:Model>Coat</fashiongram:Model>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren26"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi27 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi27">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Maxi Coats</fashiongram:Model>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Bahan>Sintetis</fashiongram:Bahan>
+        <fashiongram:Warna>Kuning</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren27"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi28 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi28">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Maxi Faux Leather Coats</fashiongram:Model>
+        <fashiongram:Warna>Merah, Emerald</fashiongram:Warna>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren28"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi29 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi29">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Model>Wide Leg Trousers</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren29"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi30 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi30">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Warna>Jeans</fashiongram:Warna>
+        <fashiongram:Model>Wide leg/Balloon jeans</fashiongram:Model>
+        <fashiongram:Bahan>Denim</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren30"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi31 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi31">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Hitam, Putih</fashiongram:Warna>
+        <fashiongram:Bahan>Jersey</fashiongram:Bahan>
+        <fashiongram:Model>Palazzo Pants</fashiongram:Model>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi32 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi32">
+        <rdf:type rdf:resource="&fashiongram;Celana"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Paperbag Pants</fashiongram:Model>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Bahan>Viscose</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren32"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi33 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi33">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Pop Color</fashiongram:Warna>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Model>Handheld Bags</fashiongram:Model>
+        <fashiongram:Bahan>PU</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren33"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi34 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi34">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Model>Chain Necklaces</fashiongram:Model>
+        <fashiongram:Bahan>Gold</fashiongram:Bahan>
+        <fashiongram:Warna>Gold</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren34"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi35 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi35">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Pastel</fashiongram:Warna>
+        <fashiongram:Bahan>Canvas</fashiongram:Bahan>
+        <fashiongram:Model>Bucket Hats</fashiongram:Model>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren35"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi36 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi36">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>leather</fashiongram:Bahan>
+        <fashiongram:Model>Bucket-Style Bags</fashiongram:Model>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren36"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi37 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi37">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Ungu, Hijau, Merah</fashiongram:Warna>
+        <fashiongram:Model>Soft Clutches</fashiongram:Model>
+        <fashiongram:Bahan>Kulit Sintentis</fashiongram:Bahan>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi38 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi38">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Warna>Cream</fashiongram:Warna>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Bahan>Suede</fashiongram:Bahan>
+        <fashiongram:Model>Boots</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren38"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi39 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi39">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Model>Chunky Boots</fashiongram:Model>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Warna>Hitam</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren39"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi40 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi40">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Model>Square-Toed Heels</fashiongram:Model>
+        <fashiongram:Bahan>Karet</fashiongram:Bahan>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam, Putih, Biru</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren40"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi41 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi41">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Model>Full Print</fashiongram:Model>
+        <fashiongram:Warna>Merah</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren41"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi42 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi42">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Model>Hawai</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren42"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi43 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi43">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Vintage</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren43"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi44 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi44">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Warna>Sand, Camel, Buff</fashiongram:Warna>
+        <fashiongram:Model>Turtleneck</fashiongram:Model>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Bahan>Rajut</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren44"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi45 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi45">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam, Abu</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Oversized Victorian Sleeves</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren45"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi46 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi46">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Printed Tops</fashiongram:Model>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren46"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi47 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi47">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Model>Slip on ber-pattern lurik</fashiongram:Model>
+        <fashiongram:Bahan>Wool</fashiongram:Bahan>
+        <fashiongram:Warna>Hitam, Abu, Cream</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren47"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi48 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi48">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Rajut</fashiongram:Bahan>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Model>Long Outer</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren48"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi49 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi49">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Coat</fashiongram:Model>
+        <fashiongram:Warna>Cream</fashiongram:Warna>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren49"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi50 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi50">
+        <rdf:type rdf:resource="&fashiongram;Outer"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Model>Kimono Outer</fashiongram:Model>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren50"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi51 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi51">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam</fashiongram:Warna>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Model>Multi Belt Bags</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren51"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi52 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi52">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>Kain Drill</fashiongram:Bahan>
+        <fashiongram:Warna>Hitam</fashiongram:Warna>
+        <fashiongram:Model>Baker Boy Hats</fashiongram:Model>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren52"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi53 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi53">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Bahan>PVC Transparan</fashiongram:Bahan>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Model>Clear case handbags (tas bening)</fashiongram:Model>
+        <fashiongram:Warna>Clear</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren53"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi54 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi54">
+        <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Warna>Coklat, Pink</fashiongram:Warna>
+        <fashiongram:Bahan>Faux Togo Leather</fashiongram:Bahan>
+        <fashiongram:Model>Mini Bag</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren54"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi55 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi55">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Model>High Rise</fashiongram:Model>
+        <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:Bahan>Canvas</fashiongram:Bahan>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren55"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi56 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi56">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Warna>Multicolor</fashiongram:Warna>
+        <fashiongram:Model>Futuristic Sneakers</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren56"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi57 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi57">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Model>Gum sole sneakers</fashiongram:Model>
+        <fashiongram:Bahan>Canvas</fashiongram:Bahan>
+        <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren57"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi58 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi58">
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Bahan>Suede</fashiongram:Bahan>
+        <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:Model>Cutout bootie</fashiongram:Model>
+        <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren58"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi59 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi59">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Warna>Brown</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Printed Shirts</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren59"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi60 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi60">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Model>Oversized Shirt</fashiongram:Model>
+        <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren60"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi61 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi61">
+        <rdf:type rdf:resource="&fashiongram;Kemeja"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Bahan>Organza</fashiongram:Bahan>
+        <fashiongram:Model>Organza</fashiongram:Model>
+        <fashiongram:Warna>Kuning</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren61"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi62 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi62">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Bahan>Rajut</fashiongram:Bahan>
+        <fashiongram:Model>Knit Wear</fashiongram:Model>
+        <fashiongram:Warna>Cream</fashiongram:Warna>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren62"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi63 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi63">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Warna>Pink, Kuning, Biru</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Tie Dye</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren63"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Produksi64 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Produksi64">
+        <rdf:type rdf:resource="&fashiongram;Kaos"/>
+        <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Warna>Hitam, Putih</fashiongram:Warna>
+        <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Model>Cropped sweat shirt</fashiongram:Model>
+        <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren64"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren01 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren01">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren02 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren02">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren03 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren03">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi03"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren04 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren04">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi04"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren05 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren05">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi05"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren06 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren06">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi06"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren07 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren07">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi07"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren08 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren08">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi08"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren09 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren09">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi09"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren10 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren10">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren11 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren11">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren12 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren12">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi12"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren13 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren13">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi13"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren14 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren14">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi14"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren15 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren15">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi15"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren16 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren16">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi16"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren17 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren17">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi17"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren18 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren18">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi18"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren19 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren19">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi19"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren20 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren20">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi20"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren21 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren21">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi21"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren22 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren22">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren23 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren23">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi23"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren24 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren24">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2021</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi24"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren25 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren25">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi25"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren26 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren26">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi26"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren27 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren27">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi27"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren28 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren28">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi28"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren29 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren29">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi29"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren30 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren30">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi30"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren31 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren31">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren32 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren32">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi32"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren33 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren33">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi33"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren34 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren34">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi34"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren35 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren35">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi35"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren36 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren36">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi36"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren37 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren37">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren38 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren38">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi38"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren39 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren39">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi39"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren40 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren40">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi40"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren41 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren41">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi41"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren42 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren42">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi42"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren43 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren43">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi43"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren44 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren44">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi44"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren45 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren45">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi45"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren46 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren46">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2020</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi46"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren47 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren47">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi47"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren48 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren48">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi48"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren49 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren49">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi49"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren50 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren50">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi50"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren51 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren51">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi51"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren52 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren52">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi52"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren53 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren53">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi53"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren54 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren54">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi54"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren55 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren55">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi55"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren56 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren56">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi56"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren57 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren57">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi57"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren58 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren58">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi58"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren59 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren59">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi59"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren60 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren60">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi60"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren61 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren61">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi61"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren62 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren62">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi62"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren63 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren63">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi63"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Tren64 -->
+
+    <NamedIndividual rdf:about="&fashiongram;Tren64">
+        <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
+        <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi64"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
