@@ -2,7 +2,7 @@
 
 Fashiongram adalah aplikasi web semantik untuk pencarian trend fashion menggunakan RDF dan SPARQL
 
-Aplikasin ini dibuat menggunakan Symfony 5 PHP Framework
+Aplikasi ini dibuat menggunakan Symfony 5 PHP Framework
 
 ## Kelompok
 
