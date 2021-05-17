@@ -105,9 +105,6 @@
                               OPTIONAL {?produksi :Warna ?warna . }
                               OPTIONAL {?produksi :Bahan ?bahan . }
                             FILTER regex ( ?jenis, '$jenis', 'i')
-                            FILTER regex(?model, '$jenis', 'i')
-                            FILTER regex(?warna, '$jenis', 'i')
-                            FILTER regex(?bahan, '$jenis', 'i')
                             FILTER ( ?tahun = '$tahun'^^xsd:integer ) 
                             }
 								"; 
