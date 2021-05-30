@@ -16,6 +16,9 @@
   <body>
   <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">FASHIONGRAM</a>
+  <form class="form-inline">
+    <button class="btn btn-outline-light" type="button" onclick="document.location='search.php'">Advanced Search</button>
+  </form>
 </nav>
     <div class="s013">
       <form action="cari.php" method="POST">
@@ -32,21 +35,8 @@
                   type="text"
                   name="keywords"
                   id="keywords"
-                  placeholder="ex: category, material, color"
+                  placeholder="ex: category/material/color"
                 />
-              </div>
-            </div>
-            <div class="input-wrap second">
-              <div class="input-field second">
-              <label>Year</label>
-                <div class="input-select">
-                  <select data-trigger="" name="tahun">
-                    <option value="" placeholder="" disabled hidden selected>Choose Year</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                  </select>
-                </div>
               </div>
             </div>
           </div>
@@ -67,16 +57,17 @@
               PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
               PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
               PREFIX : <http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#> 
-              SELECT ?tahun ?jenis ?model ?bahan ?warna ?foto
+              SELECT ?tahun ?jenis ?model ?bahan ?warna ?foto ?id
               WHERE { ?tren rdf:type :Tren .
               ?tren :memilikiTren ?produksi.
               ?produksi rdf:type :Produksi .
-              OPTIONAL {?tren :Tahun ?tahun . }
-              OPTIONAL {?produksi :urlFoto ?foto . }
-              OPTIONAL {?produksi :Jenis ?jenis . }
-              OPTIONAL {?produksi :Model ?model . }
-              OPTIONAL {?produksi :Warna ?warna . }
-              OPTIONAL {?produksi :Bahan ?bahan . }}
+              ?tren :Tahun ?tahun .
+              ?produksi :Id ?id .
+              ?produksi :urlFoto ?foto .
+              ?produksi :Jenis ?jenis .
+              ?produksi :Model ?model .
+              ?produksi :Warna ?warna .
+              ?produksi :Bahan ?bahan .}
 								"; 
 							$rows = $sc->query($q, 'rows');
 							$err = $sc->getErrors();
@@ -95,6 +86,7 @@
                 $foto=$row["foto"];
                 $bahan=$row["bahan"];
                 $warna=$row["warna"];
+                $id=$row["id"];
               echo"
               <div class='col'>
                 <div class='card h-100 shadow-sm'> <img src='$foto' class='card-img-top' alt='...'>
@@ -102,8 +94,8 @@
                 <div class='clearfix mb-3'> <span class='float-start badge rounded-pill bg-primary'>$tahun</span></div>
                 <h5 class='card-subtitle'><b>$model</b></h5>
                 <p>$jenis</p>
-                <p>$bahan</p>
-                <p>$warna</p>
+                <div class='text-center my-4'> <a href='detail.php?id=$id' class='btn btn-warning'>Detail</a>
+                </div>
                 </div>
                 </div>
                 </div>";

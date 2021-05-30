@@ -88,6 +88,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Id -->
+
+    <DatatypeProperty rdf:about="&fashiongram;Id">
+        <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#Jenis -->
 
     <DatatypeProperty rdf:about="&fashiongram;Jenis">
@@ -121,6 +130,12 @@
         <rdfs:domain rdf:resource="&fashiongram;Produksi"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#urlFoto -->
+
+    <DatatypeProperty rdf:about="&fashiongram;urlFoto"/>
     
 
 
@@ -235,7 +250,9 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Model>Oversized boyfriend blazer</fashiongram:Model>
+        <fashiongram:urlFoto>https://cdn.shopify.com/s/files/1/1527/0993/products/black-oversized-boyfriends-blazer-blazer-blossom-357785_600x.jpg?v=1578369821</fashiongram:urlFoto>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Id>PR01</fashiongram:Id>
         <fashiongram:Warna>Powder blue, charcoal, neutrals</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren01"/>
     </NamedIndividual>
@@ -247,9 +264,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi02">
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/product-1/2018/12/10/2861651/2861651_a266503a-ecf7-40c2-9c44-5ede12a066c5.jpg.webp</fashiongram:urlFoto>
         <fashiongram:Model>Mantel</fashiongram:Model>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Warna>Coklat Muda</fashiongram:Warna>
+        <fashiongram:Id>PR02</fashiongram:Id>
         <fashiongram:Bahan>Wool</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren02"/>
     </NamedIndividual>
@@ -265,6 +284,8 @@
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Warna>Pastel</fashiongram:Warna>
         <fashiongram:Model>Sweet Cropped Cardigans</fashiongram:Model>
+        <fashiongram:Id>PR03</fashiongram:Id>
+        <fashiongram:urlFoto>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//92/MTA-11821708/tidak_ada_merk_pakaian_wanita_cardigan_rajut_halus_shireen_cardy_full01_jh6po2se.jpg</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren03"/>
     </NamedIndividual>
     
@@ -275,10 +296,12 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi04">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://d2pa5gi5n2e1an.cloudfront.net/service/id/images/womens-fashion/price/3507/3507913/MF_P50000_14_Institutional_Sole_1.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Kuning</fashiongram:Warna>
         <fashiongram:Model>Small Clutch Bag</fashiongram:Model>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Id>PR04</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren04"/>
     </NamedIndividual>
     
@@ -291,7 +314,9 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:Model>Fringing Bag</fashiongram:Model>
+        <fashiongram:urlFoto>https://i.pinimg.com/originals/5d/93/4e/5d934ea404120558df88ba22eaaa1932.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Dark Hue</fashiongram:Warna>
+        <fashiongram:Id>PR05</fashiongram:Id>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren05"/>
     </NamedIndividual>
@@ -303,8 +328,10 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi06">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR06</fashiongram:Id>
         <fashiongram:Bahan>Nylon</fashiongram:Bahan>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://dynamic.zacdn.com/wCwu7Kbr3k8ZF5XXkfm3x0hie8c=/fit-in/346x500/filters:quality(95):fill(ffffff)/http://static.sg.zalora.net/p/glamorbit-8035-2727161-1.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Biru</fashiongram:Warna>
         <fashiongram:Model>Baguette Bag</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren06"/>
@@ -317,10 +344,12 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi07">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR07</fashiongram:Id>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
         <fashiongram:Warna>Hitam</fashiongram:Warna>
         <fashiongram:Model>Masker</fashiongram:Model>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/713427bff551b16465dac4d42f394a59</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren07"/>
     </NamedIndividual>
     
@@ -333,8 +362,10 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Bahan>Satin</fashiongram:Bahan>
         <fashiongram:Warna>Motif Bunga</fashiongram:Warna>
+        <fashiongram:Id>PR08</fashiongram:Id>
         <fashiongram:Model>Head Scarf</fashiongram:Model>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/b49907a65405474f1bde7ecc3124ca78</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren08"/>
     </NamedIndividual>
     
@@ -346,8 +377,10 @@
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Bahan>Canvas</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/700/product-1/2019/11/5/28673552/28673552_618a4c25-90a7-46f9-bb9b-12c7761c9784_2048_2048</fashiongram:urlFoto>
         <fashiongram:Model>Bucket Hat</fashiongram:Model>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Id>PR09</fashiongram:Id>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren09"/>
     </NamedIndividual>
@@ -360,8 +393,10 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Id>PR10</fashiongram:Id>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:Model>Boots</fashiongram:Model>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/700/product-1/2020/7/3/batch-upload/batch-upload_5319fc4f-d5ef-4d51-a238-c0ff3b3eadbc</fashiongram:urlFoto>
         <fashiongram:Warna>Putih</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren10"/>
     </NamedIndividual>
@@ -377,6 +412,8 @@
         <fashiongram:Model>Sky-high Platforms</fashiongram:Model>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:Warna>Bold</fashiongram:Warna>
+        <fashiongram:urlFoto>https://ae01.alicdn.com/kf/HTB1IeVnX4rvK1RjSszeq6yObFXas/Kalmall-Kulit-Paten-Hitam-Putih-Pink-Sky-High-Fetish-Sepatu-Wanita-Sepatu-Stiletto-Cross-Platform-Pergelangan.jpg_640x640.jpg</fashiongram:urlFoto>
+        <fashiongram:Id>PR11</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren11"/>
     </NamedIndividual>
     
@@ -387,7 +424,9 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi12">
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:urlFoto>https://d2pa5gi5n2e1an.cloudfront.net/service/id/images/womens-fashion/price/20492/20492822/MF_Sepatu_sneaker_wanita_retro_style_korea_EGL_BNI_1.jpg</fashiongram:urlFoto>
         <fashiongram:Model>Retro Sneaker</fashiongram:Model>
+        <fashiongram:Id>PR12</fashiongram:Id>
         <fashiongram:Warna>Netral</fashiongram:Warna>
         <fashiongram:Bahan>Suede</fashiongram:Bahan>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
@@ -403,7 +442,9 @@
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Model>Clogs</fashiongram:Model>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://media.karousell.com/media/photos/products/2018/02/23/moya_clogs_cream_1519349878_afed5bb3.jpg</fashiongram:urlFoto>
         <fashiongram:Bahan>Kayu</fashiongram:Bahan>
+        <fashiongram:Id>PR13</fashiongram:Id>
         <fashiongram:Warna>Cream</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren13"/>
     </NamedIndividual>
@@ -416,8 +457,10 @@
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Bahan>Cotton dan Fleece</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Be-dPICCHBNiCr6sDEFBiooQmCZDfMHZQQ&amp;usqp=CAU</fashiongram:urlFoto>
         <fashiongram:Model>Jogger Sweet Pants</fashiongram:Model>
         <fashiongram:Warna>Pastel</fashiongram:Warna>
+        <fashiongram:Id>PR14</fashiongram:Id>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren14"/>
     </NamedIndividual>
@@ -432,7 +475,9 @@
         <fashiongram:Bahan>Denim</fashiongram:Bahan>
         <fashiongram:Model>Baggie Jeans</fashiongram:Model>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/b12692da8aa4774e15199d47695e1657</fashiongram:urlFoto>
         <fashiongram:Warna>Jeans</fashiongram:Warna>
+        <fashiongram:Id>PR15</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren15"/>
     </NamedIndividual>
     
@@ -443,7 +488,9 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi16">
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://im.berrybenka.com/assets/upload/product/zoom/70421_kimona-tartan-pants_dark-red_ZIQQV.jpg</fashiongram:urlFoto>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:Id>PR16</fashiongram:Id>
         <fashiongram:Model>Tartan Pants</fashiongram:Model>
         <fashiongram:Bahan>Flanel</fashiongram:Bahan>
         <fashiongram:Warna>Merah</fashiongram:Warna>
@@ -457,9 +504,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi17">
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR17</fashiongram:Id>
         <fashiongram:Warna>Beige</fashiongram:Warna>
         <fashiongram:Bahan>Cotton Drill/Twill</fashiongram:Bahan>
         <fashiongram:Model>Chinos</fashiongram:Model>
+        <fashiongram:urlFoto>https://dynamic.zacdn.com/sVkcZGUfrbxHgzRqkQf-mmGtmDE=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/wood-1979-0694632-1.jpg</fashiongram:urlFoto>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren17"/>
     </NamedIndividual>
@@ -471,9 +520,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi18">
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/b4f8062ac79714ca712fe411d17682b3</fashiongram:urlFoto>
         <fashiongram:Warna>Coklat Muda</fashiongram:Warna>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:Model>Cargo Pants</fashiongram:Model>
+        <fashiongram:Id>PR18</fashiongram:Id>
         <fashiongram:Bahan>Cotton Twill Stretch</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren18"/>
     </NamedIndividual>
@@ -488,7 +539,9 @@
         <fashiongram:Model>Shirt Jacket</fashiongram:Model>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
         <fashiongram:Bahan>Flanel</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://www.dickies.com/dw/image/v2/AAYI_PRD/on/demandware.static/-/Sites-master-catalog-dickies/default/dw7a40cd2c/images/main/TJ211_AP1_FR.jpg?sw=1563&amp;sh=2000&amp;sm=fit</fashiongram:urlFoto>
         <fashiongram:Warna>Plaid</fashiongram:Warna>
+        <fashiongram:Id>PR19</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren19"/>
     </NamedIndividual>
     
@@ -500,9 +553,11 @@
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/8/31/9ddd1074-2847-405e-9828-2495e6de507c.jpg.webp</fashiongram:urlFoto>
         <fashiongram:Bahan>Fleece</fashiongram:Bahan>
         <fashiongram:Model>Stripes Shirt</fashiongram:Model>
         <fashiongram:Warna>Vertical Stripes</fashiongram:Warna>
+        <fashiongram:Id>PR20</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren20"/>
     </NamedIndividual>
     
@@ -513,9 +568,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi21">
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://i.pinimg.com/originals/40/72/3a/40723a2847393688363ddf5f6b6f2659.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Biru</fashiongram:Warna>
         <fashiongram:Model>Camp Collar Shirts</fashiongram:Model>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:Id>PR21</fashiongram:Id>
         <fashiongram:Bahan>Cotton Royal Cutting</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren21"/>
     </NamedIndividual>
@@ -528,8 +585,10 @@
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2020/11/11/403979467.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Hitam dan Pastel</fashiongram:Warna>
         <fashiongram:Model>Puff Sleeves</fashiongram:Model>
+        <fashiongram:Id>PR22</fashiongram:Id>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren22"/>
     </NamedIndividual>
@@ -541,6 +600,8 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi23">
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://images-na.ssl-images-amazon.com/images/I/61yQE8HzASL._AC_UX385_.jpg</fashiongram:urlFoto>
+        <fashiongram:Id>PR23</fashiongram:Id>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
@@ -557,6 +618,8 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Model>Oversized Sleeves</fashiongram:Model>
         <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/product-1/2020/7/25/207459/207459_b6f3fe17-74ae-46d4-8897-93f7f191e571_1024_1024.jpg.webp</fashiongram:urlFoto>
+        <fashiongram:Id>PR24</fashiongram:Id>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren24"/>
@@ -571,7 +634,9 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Warna>Biru, Merah</fashiongram:Warna>
         <fashiongram:Model>Blazer</fashiongram:Model>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Bahan>Suit</fashiongram:Bahan>
+        <fashiongram:Id>PR25</fashiongram:Id>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren25"/>
     </NamedIndividual>
@@ -585,7 +650,9 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Warna>Hitam, Biru, Abu</fashiongram:Warna>
         <fashiongram:Model>Coat</fashiongram:Model>
+        <fashiongram:Id>PR26</fashiongram:Id>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/product-1/2019/12/20/83291161/83291161_9f6051fb-bd52-45d2-b1d9-04d870cbcd13_700_700.jpg?ect=4g</fashiongram:urlFoto>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren26"/>
     </NamedIndividual>
@@ -600,7 +667,9 @@
         <fashiongram:Model>Maxi Coats</fashiongram:Model>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Bahan>Sintetis</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/product-1/2020/6/17/4078204/4078204_c29059f7-293c-4291-9d06-44cd847be40f_1280_1280.jpg.webp</fashiongram:urlFoto>
         <fashiongram:Warna>Kuning</fashiongram:Warna>
+        <fashiongram:Id>PR27</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren27"/>
     </NamedIndividual>
     
@@ -612,6 +681,8 @@
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Model>Maxi Faux Leather Coats</fashiongram:Model>
+        <fashiongram:Id>PR28</fashiongram:Id>
+        <fashiongram:urlFoto>data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhUZGBgaGBgYGBoYGBocGhwZGBgZGhgYGBocIS4lHCErHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrISs9NDQ0NjQ1NDQ0NDQ0NjQxNDQ0NjQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ1NDE0NDE0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQj/xABPEAACAQIDBQQGBgcGAwQLAAABAgADEQQSIQUGMUFRYXGBkRMiMqGxwQcUUoLR8CMzQmJyktIWRKKywuEVNPFzdLPiFyQ1Q1NUg5OjtNP/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBAYF/8QALBEAAgIBAwMDAwQDAQAAAAAAAAECEQMSITEEBUFRYYETMnEiM5GxIzShFP/aAAwDAQACEQMRAD8AoD7vnk8iMXhijZTxkxTxdRevjI/a7lnueJEQEfHlIaCM49pcIwFRDqIQRRIgFFEWQRNBFlEBi1MR7SjJBHtEQAkMOY223iSEyKbM97kclHtH5eMc0ZCY/EBnJvpwv0A/N4SdDjHUxvh8OTrawGvcOp7eghqmt76Dnry6Ht5xT0+ZbJoo4seHf2mPtj7LFVwCwCA8CQGc9g424ROVK2SUG3SJDdbdv6yczqcnIdenCWEbhZHX9G70rnMiuqtYg+ySwPGx8JYtlYUIiog16CSJwNQaipkPbmfzvp75Tqb3L9KWxTcV9HeDqD9Ga+GfUAvdlJ6FWAv91hIjGYv/AIeVpVsJTqOFJSsugcDQNqpIYaAjr2EE6aiPazlXB4m1j/KSfjIbfLd04nDFVIFRPXpluZtqhI5EaX62PKTjNp7lc8cWtuSg4neJQqekwlNiy5lJPIm9vZPZO4beqko/5Cl5j/8AnI3Hsi1cOH9kIuYHl3y97K2XTr6U6SsBa5AGneZtULV2ZkiDTfFBwwNIfeH9EWp77nlhaQ+9/wCSL79buVVQOlA5V1dksbDqQNbTPgbDjINU6sGWDenbj4mtRLIileAXUakcfIS6DejEoqqFpaAcz0mWUDmr0x+8I92iWasygsTdQAL3vYaASKQWaC++GLB4Uh2+sfnFBvTiuLPSA7Fb+qUdN38aR+orfytDruzjT/d63kYaUFl7XeZyBfEgdyfjFG2q5BIxhPcFlCfdnGAXOHqWHHT/AHkM1Qg2uRY6w0+4WaT/AMWrf/NN5L+EEzr05+0fOCPT7hqLK2DT7I8pRt40tWIE0QrM/wB6R+nMpRIhDH9EaRiY/ojQSQCgWHVYFiiCIAyLF0WFVYsggMURI7pJEkEd0xADuJqZEZugNu/lKnXqWtzvfj7iZZ9qtan7Oa5At79fKVDFOb3a3cD7uyRluy6O0bFy9RkzBtFYKO83Og4coFqPUqIhYsWZVBIBtcgX0HAXvLXu1sBsRs+qyC9T0mdB9rJoyjtILW7bSoByj8LMpNwdCCNCCOR4wTvkU01VGm7tYtKNV6LVmyqAVao1lI4BkufVubjLfS3ddCv9IVdKhyGm9JbgB2yswHNG/wBjGu6e7b4lKuKxC2p5MtNSPaI1z/wjkeZHZrRsPVUVFZxcLYFWFxZRYAjp2RaY6th/Ukoqzc92N66WLXMhOdfbRvaU9nUdo90mMVWzHsE88bF20+GqK6XsrhmFz6y2Ksp7wfMA8pvmBxKVFR1bMrqrKeoYXEhONE4yv8mVfSDhsmKsBoyB1+8zXt94GbJuTsdcNhaaW9YqGc9WbUyA3m3eGJFJwoL06iN3oXXOvkA33SOcuO1Kvo8PUYfs02I8Fl0JXEzTjpkO6VRXW6kMpuNDcaGxHneYDvvskYbGVEUWQkVEHRX5eBDe6aV9ElZmwRDG+Wq9j/FZj72Mq30vqBiqZ5mlr4Mfxk1yQZQtni+JTv8AkZYt31B2lSvw9L8FP4Sv7H1xK9mb4GLYmofSuwJBDsQQbEEHiCIxHpcQXkFuS7NgqBdizGmpJYkk3F9SdTIzfTdg181dcRUpFKZAVTZDa5uba3kCV7FurHQ9xnmrH61ah6u583Jm5Ud5MKMMD9Yp3FMaZxm9npe8wV6hLHtJMnET3C3giGY9YJKxUaKZn+9f68900MrM+3tX9Oe6UImQMf0OEYx/R4SQC6iLKsRQRdIhiiCLJE1iqCADlI5piN6clcHhFdL51U9D0ibS3Y4xcnSGG1KQaiwOg4+I/PvlLrqBw7hLTvFjFVPRobm/raW4e+VRaZY6SKknv4L445bRS3NY+jTFj0b0SApQrw4E5FzeObNeTu0aADF3o514ZlALjwPEdxv2SB3J2UaeHR19ojP35tbS+YaojoQRysymUarkzRWlK/krG0dvqiZC5CnQZ1K+F7WIlI2ru7QcNWSoad7sdAynmSNRbztLlvBszDoC78F19ZiQAO+ZjtzeQ1WKKLUrMLcCbggE9ACQbdkcVJy2LMzwqN1ZA17XsputzY2sSBzI5d0ve4m9n1f9DVv6Mm6N9gk6hv3Te/Yb8jpQBwjvDPrbyl8laMEHuem0qjJcjlENo7dw4pejr1QjVQUUEEk5vVB0B01GplM3d3wpJhkStnzooUWUsWA9nXhe2mp5SB3i2v8AWHBVMgUMAx9qx7eXDlrKPqOPB6WHts8zqSaXqanuJsc4XCJTZgzEszMpuDmJtY89LTNPpRxgfHFQdKdNUPebsfcRJbdffVcNhHSoLmnpSAvdibmx5W535eUoOLqtVd6rm7uxZu8/LlNcHqWo8zqMLwZHjl4CbAUHE/db5QyUXeoyIpdi7WCgknU8hBu0l67t9lD7yPwln+i5M2PBPJHPmVHzkkzO+TWt1aDJhKCMpVlpoCDoQcouDIHfXek0A9D0DnMlhU4JdgRa/US7XlK+lNh9Tt1qJ/mv8pFcjfBjdMC+pgxKW1ELaHxDkrryEmIic0EN6OCIkacRM83u/X+E0QmZ5vb+v8JWuRkBH9EaCMZIUeAjAWSOEERSLLEMUWKpElj3BYYu4ReJ9w6w4JQi5yUY8sNSFzYansjyojhDYWNuLMEtbUm7W10tbtlspbEw4UBszaX0Z1W2o1RWAPPjcwv/AAvDJmPokBUX9kXN+Gplcmz08XQK/wBTfwZ/T2DUqKKhOjXOXThcgXN9b2v4xzS2QV4rLhTpki9soYDKLWBsBcL1tcXt1nMbRBWUyi2e508MWOkkr8vyTG5zhsMg5qMp+7pHeNp21U2PZIbcepYOnRz79fmZYMQt7ytLY8XqI6M0l7mY784lzSIZibm3Za/Qdkor0Jp+8OxXxDFVU2BFz77DtsPzpKVXwVhy00Php8pOEnGKJwwfXbrwkV80jF0p6XvYjUcY+9COZEcYbDhjoCe38NLk+6WPIQj0GqWlPdj3YdT0iFbaqRbtB/6GPAhAsRY+ENQw6qbKLMVBbUeHq9/Pt7YM3rX585TKm7Oj6OMoYlFu2thFkLI6DrmUfvKCT/hvGQVrXI4CSJOVwe0H3/8AWTWM37rKGQ0qR0tcq1zccfatNPTz2cTwu+4Kksq87MrW7zWFZx9m3xhsM702DozI3VSQfdHG7O13oI7imjZmN8wPEnlbvk3/AG6qj2aNEfcb+oTQjn2RS7ZxR/vNX+d/xhMVi61QAPUqOBwDszAHrqZLf25xPJKQ+439c4N98T0p/wAh/rjEQApWnK9P1G7pZU30rn9ij/I39cT2hvXWem6lKViLGyG/+aAFa9AIIrar1HkIJGxl2vM93t/Xnul8NUdZQt6zeuSOkguSRByQo8BGEkKPARgLpFlERSLKYhilOWbdamtyzcyFHxNu3UeUrNpatgJeiLjiW9xt8pGbpG/tkNeb8JsmKeIyuUPDUeB1Plr/ADRHbDHS/d4Rji6mVxm1HInmOGp6j5A9YXaGILICeIbL4HhM8pbNHUQxVJSGeM2nifVUFSBfLodLixIF7AkcbCIVxiipZqoUngoCi/I8r8I/rAKVYi45/nn3TjuGBa4+PheQ3JvBC9lVlj+jWgT6YVGDnMhsQAbZTrpwvw+5L3U2fT0IXzZvheZdurtD0OKpsfZb9G/YGIyt4Nl8CZqFWlU9KpXWmwIcG2lgSGHMXNhz598vx048HN90wyxZ272atBjhltcAAcFAGgHG/ja/gJiww+R2U62v39tpuoF9fzz/ABmQbWw/6V78nceTNDKtkaOyT/VOL80Rhwt9dfCNcRRIZVHU301sLX18RJI0L9e4wopXbusPmfiPKUs6FJJ7DOiuao6g2sAONs1hop06++I4mnY3H5EWwTgVHNr+u3u08YtiACSLWPEdoPLwMiOCr5I+vwDd/wCfjIzag9XN10+f4yTK+qy9NRI7HC9Nuyx99vnJ4pVJGPumNT6aSfjf+DuDFsOO1vmYRLRWkP8A1dO/8YjkM9BcHEMcin0ggDta3KACMiHCxUD1G8I3BnarmwHVlHvgxolvRwRxl7IIqAoj4tz+23mYg7ljcknvnTC3lZMLJKiNBI4iSVHgIALLFAYmohohiimW7YpIoobldW14j2joRKeolv2E36JBmym7DUXB9Y6EHjK8nB6naf3ZfhhdtOxXVQDx09k25r0PZ8YmrZ0NuqHzvHuOFrhly9qtdfI8JH7HqBWZeIFuPjMz5Opg/wDHa8EljaF0sekaVsFkUPxDC7fxHiwPvPiesf4g3bjoRHGMI9Dl46C3eOElXJRKUqVc2QgpAg36Wv4e6a5u5jvT4am9/WKgN/Evqt/iBmUJSFuo+Hd2fnlc3L6Nsb+uoHSxFRR2N6rDzAP3pPG6deph7tj+rg1+Yvf5L1a0zLb1K1eqOHrseH2rN85p9pn289O2IqW/ayt/hUfKXZFseX2mVZmvYrNRbXN9LEk9g4n4w2EpeqrHibk95N7Tm0dVyg6uQndzb/CG84tRqAXXlxHTtA9w8JnpHRuUrRWcJ69WooOVQ7Xtpe5PE91tJJ4rB8MhF/2NdGHMX5HmJDB1WswNh65OvO54/npJH6y7L+qdhYjRCR2HhIbFsXSTcl5ESoJvzBswPEd/4xquEDk0iwXOGXMeAPFSbcrgX7DFauJbgy5iOB/aHYSPa8ZG7QrkAtpc8ACDY8NbcIRTbVFXVZ8SxSU5LdNci4p5aSKSCQSNDcaaXB5iJiLon6Gl/D8hEwBPSRwrOrDineEAiqVSIyJ04ciJVV9ZB++vxj1WuI0fWpTH73yMGCLDlghoI6EZsYSKMYmZSWnDxkpQXQSL5yXojQRAHtBaGtOqIDDIJaNlqTRWwJ1YMFF2U5iQbcxYiVqnLFsRhkKk2BawPTQfjK8nB6faW1n29GOa+JqgZcjN2kcB3kWkZRVldmbRiBpcXsD2CwkxV2W3tZyw77j4yJx9JlqLpyN7dLiZpJnV43F8US+HqK1rnhx0/PSOsZWUrpYC51PjIXDrbnqfO3dFkrlCvUG4v2kA38CZJNvYqywULn6biGJqEWynUA69dBoewya3DxY+uUyODq6e7NbwKW8JBVHzuToAWbQcACQLDsj/AHLXJiqd/wD4hA04Eow9/CEPuKupWvppSS5TtfGxtYlG3xp2rg6gMgtbTVCbjyZZdQ8rG+iXRXHFGzeBsG+IPhNUuDl+hnozq/Oxn9aoPTIg/ZRnPefVHwbziNWoVsx5H3Hj8/5onhmLV6rnkiqPIH43jZ3LX/Osy2dcoPTfoSmyN6fqnpENBaqu4YZrDKStjxBuCFHlJRN8MM+r7OpnwQ/FZUaFOm1RBVcohHruP2bA2bgeYHgY/fZuBPsbRT7xT8RNGHTKNM5ru8Hj6hyjw1ZE7x1vS1mdUCIT6tNbBVAAFgBoOHKRGLSyGWWpsCmT6uNpN94f1RLa267pRZxWpOBY2D6+Ev2SPItt2xpS1oUv4fkI5w2EXi0ltk7t1noJlKaDhm1+EdndnErwRT3OvzjTQqIOvg1AupMZIRfUSx1NiYy1vq9+5k/qjCpsHFD+7v5A/Ax2JkSrmdpLetT8T7pIPsjEDjQf+RvwiNPCuuIQOjL6ptmUi/dcQAl80ER9G32W/lP4QR2RozxoQw5hDKS05zkvQOgkRzktR9kQAWvOgwt4AYDFqcl8ACUA/fPwWQ9OWLYFMMrE/ssNO8f7SrKriel2mWnqU/ZkhQpFFLZm4H1eRkPiRmqrfW4PHuMm6tYEFR5kG0rW2HK+spsQLjw6zNLwjq4y0xc2iRwemnLl07rDjO4jNmIUkWS4I0INnOhFvsjzjPCbbLoiqtzdjbgASACSeY0Fo7oZjndmuxABPlYeQaNbOinJNZcepcPb+XsEVLed795uTH2wVb6xSAOvpUP8rA3/AJc0ac/z+eYk3ulTzYlP3Q78b8EK+GrrHFXJD6tqHTS/Bp6PpIXb4zIQeBGvdqTJhBI7aqer+ey/wM1M4uLp2ZV6Nld1J5gntsMvyjNPbI5ST2yMlS/gfDj8L+cjaaak9sxyVOjtuiy/WwqXnyIYmnxHQ38DxlQrU8rMv2WI8jaXnEUjx6DXx/PxlQ2tSyuTyYX8eB+F/GXYXu16nkd5xXiUvR18MYtAqjkBONDU+Img5sVSqw4Mw7iRFl2lWHCtVHdUcfAxqx1nIASVHeDFL7OJrD/6rn4kx0u92OH96qeJU/FZBidIgBYk34x4/vLHvSmf9E4++eMZ0dqoLJ7N0S3iABeV20AgBcv/AEk47rS/+2f64JTYIwFTCGHMI0QHOcl6PsiQ4kvh/ZEAFrQWnYLwGKIJL7LxJS9hmuV062vIhTJHZ51J6DTv4D8fCV5ftZv7Y1/6o37llxeIDCykKLC4Aue0GVrbQ0P8J+El1tlHq5Tz46+cidreyfH4GZG7OvUEsckvRhNh0bUxprJAN6p7XH+AH+sRvs/2FFuUclhkQDj6zHvJy/6IJ8si4KMYR8bf8Ck68O7p+dJbtxMPepUe3BFQHtZszDyVPOVVUPG2l+PytND3MwuXDhubuz+Fwi/4UEtxLcwd4yacGleXRZVEa45Lqfz1/GPEERxQ9UzScoZntvC3f88pW8HWV1DLexGg5jXge46S/wC1cPqT2E+6ZVsCsVOQ8DqO+2o8fkJnzRR7/aM0oycfD/ssVQ2Ug/ZA8tfjK1t2hdMw1yNcn917C57L5P5pMYtix7OH+8TqU2dXCj1WXKzBfVBK+qL8tVHlK4SqSPV6/B9TE16p/wA+ClkRTCoS1h0JnDppzjnZg1c9FM2nEDRoIJ0wA5aAwwgYQA5Cw1py0ABBBaCAB2hTDOYQwA5JfDn1RIi0lKHAQAcZoZTEYdYDHCSf3aXVza9gv+rh5SvI0n93QDnBBOi8OgDknwAlc/tZs7f/ALER/XOY6WC35ak+Mh9pKMp7jJmsALAaSK2qLIx5m8yM7Rfa/wAAwZ0sDYi3Hh2Rw1Zj7WU9osTbXTS/M9Y1osCBmFuWYfMdIqKP2WU9hBHwJiRY0rti9BGNrjU+yLHjyF+tyOHWa5szDBERBwRQo+7p8plmyqLZs7MgyWfM7kLmVrqunGxF7aXynWatsysrqCHV9BdlIIJ66cJpwrY5nvORymkuF/Y/RY2xOv57I6PZEXSXHhEBj6Fwx/dPwnnjB4pg6MTezKeziL6Tdt9N6MPhabqWD1mRglNSC1yCAzfZW/M8baXMwNE0tFSZOOWUGqZdGQknv/PwidfFCmCGY5bhsl/aK8DlkK22amUKLAgAFuJNuB6A8IwZiSSSSTxJ1PnKI4Xe50HU96ho041b9+EcxVTO7va2ZmYgfvEn5xTCVsiuLasLCECXhhTNieU0nNttu2NysAEVCzmWAgoE6FigWcKwATIgyxXJO5YAJZJ2LZZ2AC+H2PWfgh8ZKYbc6o2rEATUEwQ5CKjCjpFuPYoOG3PQe1cyTTdul9iW0YMRRMLFQWVEbtUvsTo3Zp/YlxGFhhhRCgspX9k6Z4XECbL+rG4a+e9r9gI/1S8phRIHetQvox1z/BbRTX6Tb2/fPErzm+sittNZGJ6H4GSoUnlp1kDt9706h5AZR85kS3OvyS04pP0T/oQ2ftakQAXym3Bhb38JLqubUZWB4kEWmeKNOE6pINwSD2G3wl7wLwzwMXfciVTin+NjSFVwrIpsrWzC3aDYH7oHTjGu38WcOhfDu6MAoLD1TmJs1uosONjxIvpKZS2tXXhVP3jf43h8ftqtWUI7AqGDaCxuARr5mEcTTQZ+54csGkmm1VeLfkeHe/HkW+u4ix45ahBt2EWIjDFbWxFS4fEVnH79V28wWMZXnLy88EC6cI7UxpHeHS4gAcCKKkWSlF1pQAbpSgZDawjrSXD6P6YLOCgIPMi9vVkXKhpWUEU4YU5NbYpD6xVAGmdh74gmEJ5R2FEeKc6KF5KrgGhzh8o7YWFEQcObzjUpJ5OsD0xaFhRGZII79AesEAo3AU4cU4qo7oDVUcryYgqpFFpxGpigo1IUSGxe8NJDYvfu1+EALAVA5iItVUdsqGL3wQewpPadJCYreOs5tmCD938TAC/bQ2slMEs6r46yn7S2kuJdSt7KbXPP9okeUrFR2ZrsS56k3knsY2DE8sxH8oX/AFSvJ9pv7d++vwOsTVyrYaE9NTeQW8lMLQYX5DTxFzLAVAa7WLcgOA7zKxvPU9V9bkkD3roJlX3I6nqHXTzfsypJwggWAzYcOAicAnbTpEAEyYLwEQXgAAJdPo02XSxWIfD1edMuhvazIy3HirE/dlMBk/uPivR47Dvc2LhDbpVBp/6xEwRoO2dyERrUmLDn2SCfdSsWsoYnkAL/AAmz4fZV9W0HQcf9pJUMMqCyqB8fExKyToxGnuJiRYlD5ay17r7K+rI+dGDsTYW7ABaaSYyxGKRT9o9BrE1YJmP4zYz5nf0bWLM2o6m8jXpuP2JrmMc1NCoC9I1TYSv/AO78eHxjVDZkFau40yN5Rm1Zz+yfKbnS3RonVh4L+MejdvDAW9EtvP4x0iLZgdLDu3KO6ezzxM2ypuphjwS3dI/GbpYdRe5HQXiY0ZP9Tgl//s2nUzkXyMbY7e6muiKznusPMyFxm81duBCDs1MrhJ5mdIPOWkB5VxTuDndm7z8hGpcdIAeU6tMQAT0Mk9n7Br1rZKbW+02g8zxkhsnaOGpWLYcu3U2OvZcyyJv2gAAosOwZfxiAJsrcBRZqz5v3V0HieJjbejZyU3bLTKIqIiMgFmLsWc6a3GVRr1ksu/VHKSUe4HC3H3yWxND0gV3WzlACL+zf1ivTQ8+yV5X+k09LkePIpIzW+YHLmFuo17+Eqm86Zaa3uCzMSCLEgE9n8PnN1XBqsyz6Xwp+rEcb1R4EJ+AmbGrkrPV6ruTnhcEqv3M5Wd1nBecN+s2HggLGFLzjd84YAAzoE4J3Xr5QAMItSq5SGU2KkMpHJhqD4ECIqkVWAHrPZ+INSlTcixdFYjjYsoNr+M5iMaq6Xueg+fSVDc7ahbZ+FANgtFEJHG6DIR2arJmhQZvZHjy85FsaQpWxzNzsOg+ZhsPgmbllHU/hH+GwSrqdW69O4R3Ch36CFHCqvK56mOIIlUrqvFgIyIpCVKgAuTaMK+PvounaflGLknUm57YNkkh7X2ieCDxP4SPqXJuxuYvRw7NwGnXlJLD4NV14nqfkIuQ2RCehbofIwSx6QQ0hqPPS0pzJHQoHpDLhzLCI2CQyUrxx6I9IqtOADUC0MFJj4UtLcoomGW2kAG+BstRGcXUOhbtAYE+6ajQxGdVf7ZYj+HMcp8QAfGZzTwhY28STwAHEmWzZ20iFSnlN1ptlW3rFVyqrFdbA+68zZpK0vJfhTpj/AGrjclJmXiQFQ/vMcq+8iY/9JuLVsRTpKb+ipgNr+2xuQe2wU+M0Dbe2Vc0adFkZhVAyFrMTTDXpqtxd7qQAeemhsRj23cO6YhzUIY1Caiut8rK5JV0vrblY6ggg6iLEtyeZ1FL1GEIbdIcwhM0GUUwuFeo606al3c2VRxJ/Oscba2RWwtT0VZcrWDCxBUg81YaHmO8GT30bUx9dFQi/o6bsO9gEHuY+UvW+Oxmx1A5U/SJdqZ5k29ZL9GAHiBEMxgaxRFhUEVEYgQwnIBADdPokwq1MAhY39HUqoVHUtnF/BwfGaMqgCwFgOQmUfQdtACniqTGwWpTcE9aispH/AOIec1b0gte4t1vEApGWLxypoPWboPmY2xeOJ0XQdeZ7ukYERNjSO18e7c7DoNI3NVukcJQZvZBMe0NmH9o2HQcfOMZGU2djZVJPZJfCbPtq+p6cv949o0VUWUWhyYqFZ3QRNnnGaRu0topRF2bXkOZ8IwJHPBKj/a4fYPmIIUwsoYgWCCTEGgEEEAFqUc04IImMkcN7Ld6/GO8N/wA/W/7rQ/8AEqwQTK/3GaF9hk+1v/bLf97X/wAVYvvvxp/9rjv/ANt4IJb5RW+GVWFMEEsKi7fRj+trfwJ/maa/hOAggiGed9q/8xX/AO2q/wCdo2EEEYjsEEEANQ+hf++fw4f415pCcYIJDyTXAdpyCCMCcw3sjui0EEaIsI0TMEEGBWtsfrPCK0fYT+E/5jBBGINBBBGI/9k=</fashiongram:urlFoto>
         <fashiongram:Warna>Merah, Emerald</fashiongram:Warna>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
@@ -625,8 +696,10 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi29">
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:Id>PR29</fashiongram:Id>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:Model>Wide Leg Trousers</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren29"/>
@@ -642,7 +715,9 @@
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:Warna>Jeans</fashiongram:Warna>
         <fashiongram:Model>Wide leg/Balloon jeans</fashiongram:Model>
+        <fashiongram:urlFoto>https://i.pinimg.com/474x/4e/4c/94/4e4c94e8cfa61ece21ff70759772d66b.jpg</fashiongram:urlFoto>
         <fashiongram:Bahan>Denim</fashiongram:Bahan>
+        <fashiongram:Id>PR30</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren30"/>
     </NamedIndividual>
     
@@ -654,8 +729,10 @@
         <rdf:type rdf:resource="&fashiongram;Celana"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Warna>Hitam, Putih</fashiongram:Warna>
+        <fashiongram:Id>PR31</fashiongram:Id>
         <fashiongram:Bahan>Jersey</fashiongram:Bahan>
         <fashiongram:Model>Palazzo Pants</fashiongram:Model>
+        <fashiongram:urlFoto>https://im.berrybenka.com/assets/upload/product/zoom/94440_biona-palazzo-pants_black_0S5IC.jpg</fashiongram:urlFoto>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren31"/>
     </NamedIndividual>
@@ -670,7 +747,9 @@
         <fashiongram:Model>Paperbag Pants</fashiongram:Model>
         <fashiongram:Warna>Biru</fashiongram:Warna>
         <fashiongram:Jenis>Celana</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://i.pinimg.com/736x/e0/bd/70/e0bd70d0aa7725562911c11b278c2660.jpg</fashiongram:urlFoto>
         <fashiongram:Bahan>Viscose</fashiongram:Bahan>
+        <fashiongram:Id>PR32</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren32"/>
     </NamedIndividual>
     
@@ -681,9 +760,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi33">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://images-na.ssl-images-amazon.com/images/I/61NNwAx2GQL._AC_UL1100_.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Pop Color</fashiongram:Warna>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
         <fashiongram:Model>Handheld Bags</fashiongram:Model>
+        <fashiongram:Id>PR33</fashiongram:Id>
         <fashiongram:Bahan>PU</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren33"/>
     </NamedIndividual>
@@ -696,7 +777,9 @@
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://target.scene7.com/is/image/Target/GUEST_879f208c-08d6-4736-b28d-913fb29fe68d?hei=300&amp;qlt=80&amp;fmt=pjpeg</fashiongram:urlFoto>
         <fashiongram:Model>Chain Necklaces</fashiongram:Model>
+        <fashiongram:Id>PR34</fashiongram:Id>
         <fashiongram:Bahan>Gold</fashiongram:Bahan>
         <fashiongram:Warna>Gold</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren34"/>
@@ -710,9 +793,11 @@
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Warna>Pastel</fashiongram:Warna>
+        <fashiongram:urlFoto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjr67hpEP3tXMJomBDTihpPZCv9h_2xizVg&amp;usqp=CAU</fashiongram:urlFoto>
         <fashiongram:Bahan>Canvas</fashiongram:Bahan>
         <fashiongram:Model>Bucket Hats</fashiongram:Model>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:Id>PR35</fashiongram:Id>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren35"/>
     </NamedIndividual>
     
@@ -723,7 +808,9 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi36">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR36</fashiongram:Id>
         <fashiongram:Bahan>leather</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://ecs7.tokopedia.net/img/cache/500-square/product-1/2017/9/21/15337649/15337649_ab016311-cdd7-4123-994e-c57596a39f93_1500_1500.jpg</fashiongram:urlFoto>
         <fashiongram:Model>Bucket-Style Bags</fashiongram:Model>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
@@ -737,6 +824,8 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi37">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://img.joomcdn.net/cf5cba9c77d7444b002158fa91f5b08cf30a4ec6_original.jpeg</fashiongram:urlFoto>
+        <fashiongram:Id>PR37</fashiongram:Id>
         <fashiongram:Warna>Ungu, Hijau, Merah</fashiongram:Warna>
         <fashiongram:Model>Soft Clutches</fashiongram:Model>
         <fashiongram:Bahan>Kulit Sintentis</fashiongram:Bahan>
@@ -751,9 +840,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi38">
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Warna>Cream</fashiongram:Warna>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:Bahan>Suede</fashiongram:Bahan>
+        <fashiongram:Id>PR38</fashiongram:Id>
         <fashiongram:Model>Boots</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren38"/>
     </NamedIndividual>
@@ -766,8 +857,10 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://www.office.co.uk/medias/sys_master/root/hac/h33/9147511406622/9147511406622.jpg</fashiongram:urlFoto>
         <fashiongram:Model>Chunky Boots</fashiongram:Model>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
+        <fashiongram:Id>PR39</fashiongram:Id>
         <fashiongram:Warna>Hitam</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren39"/>
     </NamedIndividual>
@@ -780,9 +873,11 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Model>Square-Toed Heels</fashiongram:Model>
+        <fashiongram:Id>PR40</fashiongram:Id>
         <fashiongram:Bahan>Karet</fashiongram:Bahan>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:Warna>Hitam, Putih, Biru</fashiongram:Warna>
+        <fashiongram:urlFoto>https://ae01.alicdn.com/kf/HTB1okbQX1H2gK0jSZJnq6yT1FXaY/Genshuo-Vintage-Square-Toe-Sandal-Wanita-Pita-Putih-Tumit-Tinggi-Wanita-Sandal-Sexy-Slip-Di-Pantai.jpg</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren40"/>
     </NamedIndividual>
     
@@ -793,6 +888,8 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi41">
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//121/MTA-9978988/woffi_man_woffi_man_kaos_pria_aliwal_cotton_print_merah_full10_hk4gtfuo.jpg</fashiongram:urlFoto>
+        <fashiongram:Id>PR41</fashiongram:Id>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
         <fashiongram:Model>Full Print</fashiongram:Model>
@@ -807,6 +904,8 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi42">
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR42</fashiongram:Id>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Warna>Biru</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
@@ -823,6 +922,8 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUipLFk79RpVK67iawD4gLktlUq9EpxT8Sw&amp;usqp=CAU</fashiongram:urlFoto>
+        <fashiongram:Id>PR43</fashiongram:Id>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Model>Vintage</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren43"/>
@@ -835,8 +936,10 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi44">
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Warna>Sand, Camel, Buff</fashiongram:Warna>
         <fashiongram:Model>Turtleneck</fashiongram:Model>
+        <fashiongram:Id>PR44</fashiongram:Id>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:Bahan>Rajut</fashiongram:Bahan>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren44"/>
@@ -849,10 +952,12 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi45">
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR45</fashiongram:Id>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:Warna>Hitam, Abu</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Model>Oversized Victorian Sleeves</fashiongram:Model>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/6a71500f7b0bf64ff10447a07e92da71</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren45"/>
     </NamedIndividual>
     
@@ -865,8 +970,10 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Model>Printed Tops</fashiongram:Model>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:Id>PR46</fashiongram:Id>
         <fashiongram:Warna>Hitam</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://im.berrybenka.com/assets/upload/product/zoom/283127_sophie-murana-printed-tops-jet-black_black_PB5LX.jpg</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren46"/>
     </NamedIndividual>
     
@@ -878,8 +985,10 @@
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
+        <fashiongram:Id>PR47</fashiongram:Id>
         <fashiongram:Model>Slip on ber-pattern lurik</fashiongram:Model>
         <fashiongram:Bahan>Wool</fashiongram:Bahan>
+        <fashiongram:urlFoto>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//99/MTA-7966521/bermock_bermock_brown_lurik_poncho_full01_euews5yj.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Hitam, Abu, Cream</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren47"/>
     </NamedIndividual>
@@ -891,8 +1000,10 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi48">
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR48</fashiongram:Id>
         <fashiongram:Bahan>Rajut</fashiongram:Bahan>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
+        <fashiongram:urlFoto>https://media.karousell.com/media/photos/products/2020/02/08/baru_real_pict_long_cardigan_outer_outwear_panjang_sweater_rajut_knit_jaket_luaran_wanita_cokelat_ar_1581099071_fb39b819_progressive.jpg</fashiongram:urlFoto>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Model>Long Outer</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren48"/>
@@ -906,6 +1017,8 @@
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Model>Coat</fashiongram:Model>
+        <fashiongram:urlFoto>https://i.ebayimg.com/thumbs/images/g/3lcAAOSwEOJgmkMR/s-l300.jpg</fashiongram:urlFoto>
+        <fashiongram:Id>PR49</fashiongram:Id>
         <fashiongram:Warna>Cream</fashiongram:Warna>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
@@ -919,10 +1032,12 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi50">
         <rdf:type rdf:resource="&fashiongram;Outer"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR50</fashiongram:Id>
         <fashiongram:Model>Kimono Outer</fashiongram:Model>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Jenis>Outer</fashiongram:Jenis>
         <fashiongram:Warna>Biru</fashiongram:Warna>
+        <fashiongram:urlFoto>https://images.f2fcdn.net/files/fashion-5/tikba-batik-farina-kimono-blazer-biru-dongker-m.jpg</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren50"/>
     </NamedIndividual>
     
@@ -933,7 +1048,9 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi51">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR51</fashiongram:Id>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//90/MTA-12121866/fossil_fossil_brenna_belt_bag_black_leather_slg1317001_-_tas_pinggang_wanta_full01_i3gwktsb.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Hitam</fashiongram:Warna>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:Model>Multi Belt Bags</fashiongram:Model>
@@ -947,7 +1064,9 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi52">
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/a2f30bdcd36fc09b563cc2d0403b6ec4</fashiongram:urlFoto>
         <fashiongram:Bahan>Kain Drill</fashiongram:Bahan>
+        <fashiongram:Id>PR52</fashiongram:Id>
         <fashiongram:Warna>Hitam</fashiongram:Warna>
         <fashiongram:Model>Baker Boy Hats</fashiongram:Model>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
@@ -962,8 +1081,10 @@
         <rdf:type rdf:resource="&fashiongram;Aksesoris"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Bahan>PVC Transparan</fashiongram:Bahan>
+        <fashiongram:Id>PR53</fashiongram:Id>
         <fashiongram:Jenis>Aksesoris</fashiongram:Jenis>
         <fashiongram:Model>Clear case handbags (tas bening)</fashiongram:Model>
+        <fashiongram:urlFoto>https://sc04.alicdn.com/kf/H1d135b7be4754892b8ff111e72b8db33u.jpg</fashiongram:urlFoto>
         <fashiongram:Warna>Clear</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren53"/>
     </NamedIndividual>
@@ -979,6 +1100,8 @@
         <fashiongram:Warna>Coklat, Pink</fashiongram:Warna>
         <fashiongram:Bahan>Faux Togo Leather</fashiongram:Bahan>
         <fashiongram:Model>Mini Bag</fashiongram:Model>
+        <fashiongram:Id>PR54</fashiongram:Id>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/ba2d84fa372e4806587bf0507032d5eb</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren54"/>
     </NamedIndividual>
     
@@ -990,7 +1113,9 @@
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Model>High Rise</fashiongram:Model>
+        <fashiongram:urlFoto>data:image/jpeg;base64,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</fashiongram:urlFoto>
         <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:Id>PR55</fashiongram:Id>
         <fashiongram:Bahan>Canvas</fashiongram:Bahan>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren55"/>
@@ -1003,9 +1128,11 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi56">
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
+        <fashiongram:Id>PR56</fashiongram:Id>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
         <fashiongram:Bahan>Leather</fashiongram:Bahan>
         <fashiongram:Warna>Multicolor</fashiongram:Warna>
+        <fashiongram:urlFoto>https://runcolors.pl/product_picture/full_size/air_max_95_premium_throwback_future_538416-021_nike_538416-021.jpg</fashiongram:urlFoto>
         <fashiongram:Model>Futuristic Sneakers</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren56"/>
     </NamedIndividual>
@@ -1021,6 +1148,8 @@
         <fashiongram:Model>Gum sole sneakers</fashiongram:Model>
         <fashiongram:Bahan>Canvas</fashiongram:Bahan>
         <fashiongram:Warna>Putih</fashiongram:Warna>
+        <fashiongram:Id>PR57</fashiongram:Id>
+        <fashiongram:urlFoto>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//107/MTA-8997370/oxwalker_sepatu_termurah_sepatu_putih_pria_sneakers_casual_-_phoenix_white_gum_-_oxwalker_ori_full05_puwm8nbr.jpg</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren57"/>
     </NamedIndividual>
     
@@ -1033,7 +1162,9 @@
         <rdf:type rdf:resource="&fashiongram;Sepatu"/>
         <fashiongram:Bahan>Suede</fashiongram:Bahan>
         <fashiongram:Jenis>Sepatu</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://s2.bukalapak.com/img/73367518332/s-330-330/data.jpeg.webp</fashiongram:urlFoto>
         <fashiongram:Model>Cutout bootie</fashiongram:Model>
+        <fashiongram:Id>PR58</fashiongram:Id>
         <fashiongram:Warna>Coklat</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren58"/>
     </NamedIndividual>
@@ -1045,10 +1176,12 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi59">
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:Id>PR59</fashiongram:Id>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
         <fashiongram:Warna>Brown</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Model>Printed Shirts</fashiongram:Model>
+        <fashiongram:urlFoto>https://cf.shopee.co.id/file/338d62c180edae3150f11d6ba1265351</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren59"/>
     </NamedIndividual>
     
@@ -1063,6 +1196,8 @@
         <fashiongram:Model>Oversized Shirt</fashiongram:Model>
         <fashiongram:Warna>Biru</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Id>PR60</fashiongram:Id>
+        <fashiongram:urlFoto>https://id-live-01.slatic.net/p/b9814c4edca5f497dc7e7a5cb3e08dc8.jpg_2200x2200q80.jpg_.webp</fashiongram:urlFoto>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren60"/>
     </NamedIndividual>
     
@@ -1074,8 +1209,10 @@
         <rdf:type rdf:resource="&fashiongram;Kemeja"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Kemeja</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://ae01.alicdn.com/kf/HTB1G7mnKbGYBuNjy0Foq6AiBFXal/2018-Baru-Musim-Gugur-Fashion-Wanita-Kemeja-Longgar-Renda-Organza-Boneka-Blus-Kemeja-Merah-Kuning-204.jpg</fashiongram:urlFoto>
         <fashiongram:Bahan>Organza</fashiongram:Bahan>
         <fashiongram:Model>Organza</fashiongram:Model>
+        <fashiongram:Id>PR61</fashiongram:Id>
         <fashiongram:Warna>Kuning</fashiongram:Warna>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren61"/>
     </NamedIndividual>
@@ -1087,6 +1224,8 @@
     <NamedIndividual rdf:about="&fashiongram;Produksi62">
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
+        <fashiongram:urlFoto>https://images.tokopedia.net/img/cache/500-square/product-1/2020/7/4/1646253/1646253_db68f795-56ea-4d11-9891-cd73586f000b_1024_1024.jpg.webp</fashiongram:urlFoto>
+        <fashiongram:Id>PR62</fashiongram:Id>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:Bahan>Rajut</fashiongram:Bahan>
         <fashiongram:Model>Knit Wear</fashiongram:Model>
@@ -1102,6 +1241,8 @@
         <rdf:type rdf:resource="&fashiongram;Kaos"/>
         <rdf:type rdf:resource="&fashiongram;Produksi"/>
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
+        <fashiongram:urlFoto>https://id-live-01.slatic.net/p/e7a2448dbd03150d0d483e3f0354f732.jpg_2200x2200q80.jpg_.webp</fashiongram:urlFoto>
+        <fashiongram:Id>PR63</fashiongram:Id>
         <fashiongram:Warna>Pink, Kuning, Biru</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
         <fashiongram:Model>Tie Dye</fashiongram:Model>
@@ -1118,6 +1259,8 @@
         <fashiongram:Jenis>Kaos</fashiongram:Jenis>
         <fashiongram:Warna>Hitam, Putih</fashiongram:Warna>
         <fashiongram:Bahan>Cotton</fashiongram:Bahan>
+        <fashiongram:Id>PR64</fashiongram:Id>
+        <fashiongram:urlFoto>https://dynamic.zacdn.com/W7HhdojoU7IMkLFwzah9ELKlG_8=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/hm-9917-3157182-1.jpg</fashiongram:urlFoto>
         <fashiongram:Model>Cropped sweat shirt</fashiongram:Model>
         <fashiongram:dimilikiTren rdf:resource="&fashiongram;Tren64"/>
     </NamedIndividual>
@@ -1678,6 +1821,7 @@
 
     <NamedIndividual rdf:about="&fashiongram;Tren56">
         <rdf:type rdf:resource="&fashiongram;Tren"/>
+        <fashiongram:Tahun rdf:datatype="&xsd;int">2019</fashiongram:Tahun>
         <fashiongram:memilikiTren rdf:resource="&fashiongram;Produksi56"/>
     </NamedIndividual>
     
