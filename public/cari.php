@@ -207,6 +207,7 @@
               FILTER ( ?tahun = '$tahun'^^xsd:integer ) }
 								"; 
 							$rows = $sc->query($q, 'rows');
+              //var_dump($rows);
 							$err = $sc->getErrors();
 							if ($err) {
 								print_r($err);
