@@ -142,13 +142,13 @@
             //Error Handling
             if(!$jenis && !$bahan && !$warna && !$tahun){
                 echo"<fieldset>
-            <legend>Harap masukkan kata yang dicari</legend>
+            <legend>Please enter the words</legend>
             </fieldset>";
             }
 
 			else if(!$tahun){
-			    $fuseki_server = "http://localhost:3030"; // fuseki server address 
-				$fuseki_sparql_db = "fashiongram1"; // fuseki Sparql database 
+			    $fuseki_server = "http://31.220.62.156:3030/"; // fuseki server address 
+				$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
 				$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 				$sc = new SparqlClient();
 				$sc->setEndpointRead($endpoint);
@@ -169,7 +169,8 @@
               ?produksi :Bahan ?bahan .
               FILTER contains(lcase(str(?jenis)), lcase(str('$jenis')))
               FILTER contains(lcase(str(?bahan)), lcase(str('$bahan')))
-              FILTER contains(lcase(str(?warna)), lcase(str('$warna')))}
+              FILTER contains(lcase(str(?warna)), lcase(str('$warna')))
+            }
 								"; 
 			    $rows = $sc->query($q, 'rows');
 				$err = $sc->getErrors();
@@ -184,7 +185,7 @@
               
               if(empty($rows["result"]["rows"])){
                   echo"<fieldset>
-                  <legend>Data tidak ditemukan</legend>
+                  <legend>Data not found!</legend>
                   </fieldset>";
                 }
                 echo"
@@ -219,7 +220,7 @@
 				}
 
                 else{
-                    $fuseki_server = "http://localhost:3030"; // fuseki server address 
+                    $fuseki_server = "http://31.220.62.156:3030/"; // fuseki server address 
 				$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
 				$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 				$sc = new SparqlClient();
@@ -257,7 +258,7 @@
               
               if(empty($rows["result"]["rows"])){
                   echo"<fieldset>
-                  <legend>Data tidak ditemukan</legend>
+                  <legend>Data not found!</legend>
                   </fieldset>";
                 }
                 echo"

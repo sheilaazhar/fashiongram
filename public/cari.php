@@ -100,12 +100,12 @@
             //Error Handling
               if(!$keywords){
 							echo"<fieldset>
-                  <legend>Harap masukkan kata kunci/tahun yang dicari</legend>
+                  <legend>Please enter the keywords</legend>
                   </fieldset>";
             }
 
             else {
-              $fuseki_server = "http://localhost:3030"; // fuseki server address 
+              $fuseki_server = "http://31.220.62.156:3030/"; // fuseki server address 
 							$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
 							$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 							$sc = new SparqlClient();
@@ -180,7 +180,7 @@
 
               if(empty($rows["result"]["rows"])){
                   echo"<fieldset>
-                  <legend>Data tidak ditemukan</legend>
+                  <legend>Data not found!</legend>
                   </fieldset>";
                 }
                 echo"
