@@ -88,8 +88,8 @@
 						<div class='col-lg-12 pt-2'>
 							<h5>Detail</h5>
                             <span>Category : $jenis</span><hr class='m-0 pt-2 mt-2'>
-							<span>Bahan : $bahan</span><hr class='m-0 pt-2 mt-2'>
-                            <span>Warna : $warna</span><hr class='m-0 pt-2 mt-2'>
+							<span>Material : $bahan</span><hr class='m-0 pt-2 mt-2'>
+                            <span>Color : $warna</span><hr class='m-0 pt-2 mt-2'>
 						</div>
 						<div class='col-lg-12'>
 							<p class='tag-section'><strong>Tag : </strong>$jenis , $model , $bahan , $warna , $tahun</p>
