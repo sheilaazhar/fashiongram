@@ -49,34 +49,34 @@
           <div class="left">
             <div class="input-wrap first">
               <div class="input-field first">
-                <label>Type here....</label>
+                <label>Category</label>
                 <input
                   type="text"
                   name="jenis"
                   id="jenis"
-                  placeholder="category"
+                  placeholder="Type here..."
                 />
               </div>
             </div>
             <div class="input-wrap second">
               <div class="input-field second">
-                <label>Type here....</label>
+                <label>Material</label>
                 <input
                   type="text"
                   name="bahan"
                   id="bahan"
-                  placeholder="material"
+                  placeholder="Type here..."
                 />
               </div>
             </div>
             <div class="input-wrap third">
               <div class="input-field third">
-                <label>Type here....</label>
+                <label>Color</label>
                 <input
                   type="text"
                   name="warna"
                   id="warna"
-                  placeholder="color"
+                  placeholder="Type here..."
                 />
               </div>
             </div>
@@ -136,8 +136,8 @@
 				$bahan=$_POST['bahan'];
             if(isset($_POST['warna']))
 				$warna=$_POST['warna'];
-			if(isset($_POST['tahun']))
-			$tahun=$_POST['tahun'];
+			  if(isset($_POST['tahun']))
+			  $tahun=$_POST['tahun'];
 
             //Error Handling
             if(!$jenis && !$bahan && !$warna && !$tahun){
@@ -148,7 +148,7 @@
 
 			else if(!$tahun){
 			    $fuseki_server = "http://localhost:3030"; // fuseki server address 
-				$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
+				$fuseki_sparql_db = "fashiongram1"; // fuseki Sparql database 
 				$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 				$sc = new SparqlClient();
 				$sc->setEndpointRead($endpoint);

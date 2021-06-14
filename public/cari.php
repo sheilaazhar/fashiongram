@@ -49,12 +49,12 @@
           <div class="left">
             <div class="input-wrap first">
               <div class="input-field first">
-                <label>Type here....</label>
+                <label>Keywords (ex: category/model/material/color)</label>
                 <input
                   type="text"
                   name="keywords"
                   id="keywords"
-                  placeholder="ex: category/material/color"
+                  placeholder="Type here..."
                 />
               </div>
             </div>
@@ -96,28 +96,28 @@
 							
 						if(isset($_POST['keywords']))
 							$keywords=$_POST['keywords'];
-						if(isset($_POST['tahun']))
-							$tahun=$_POST['tahun'];
 
             //Error Handling
-              if(!$keywords && !$tahun){
+              if(!$keywords){
 							echo"<fieldset>
                   <legend>Harap masukkan kata kunci/tahun yang dicari</legend>
                   </fieldset>";
             }
 
-            else if(!$tahun){
+            else {
               $fuseki_server = "http://localhost:3030"; // fuseki server address 
 							$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
 							$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 							$sc = new SparqlClient();
 							$sc->setEndpointRead($endpoint);
+              $key = explode(" ",$keywords);
+              foreach($key as $kata){
 							$q = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
               PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
               PREFIX : <http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#> 
               SELECT ?tahun ?jenis ?model ?bahan ?warna ?foto ?id
-              WHERE { ?tren rdf:type :Tren .
+              WHERE { {?tren rdf:type :Tren .
               ?tren :memilikiTren ?produksi.
               ?produksi rdf:type :Produksi .
               OPTIONAL {?tren :Tahun ?tahun . }
@@ -127,11 +127,46 @@
               OPTIONAL {?produksi :Model ?model . }
               OPTIONAL {?produksi :Warna ?warna . }
               OPTIONAL {?produksi :Bahan ?bahan . }
-              FILTER (regex ( ?jenis, '$keywords', 'i') || 
-              regex ( ?model, '$keywords', 'i') || 
-              regex ( ?warna, '$keywords', 'i') ||
-              regex ( ?bahan, '$keywords', 'i')) }
+              FILTER regex ( ?jenis, '$kata', 'i') } 
+  UNION {?tren rdf:type :Tren .
+              ?tren :memilikiTren ?produksi.
+              ?produksi rdf:type :Produksi .
+              OPTIONAL {?tren :Tahun ?tahun . }
+              OPTIONAL {?produksi :urlFoto ?foto . }
+              OPTIONAL {?produksi :Id ?id . }
+              OPTIONAL {?produksi :Jenis ?jenis . }
+              OPTIONAL {?produksi :Model ?model . }
+              OPTIONAL {?produksi :Warna ?warna . }
+              OPTIONAL {?produksi :Bahan ?bahan . }
+              FILTER
+              regex ( ?model, '$kata', 'i')}
+  UNION {?tren rdf:type :Tren .
+              ?tren :memilikiTren ?produksi.
+              ?produksi rdf:type :Produksi .
+              OPTIONAL {?tren :Tahun ?tahun . }
+              OPTIONAL {?produksi :urlFoto ?foto . }
+              OPTIONAL {?produksi :Id ?id . }
+              OPTIONAL {?produksi :Jenis ?jenis . }
+              OPTIONAL {?produksi :Model ?model . }
+              OPTIONAL {?produksi :Warna ?warna . }
+              OPTIONAL {?produksi :Bahan ?bahan . }
+              FILTER
+              regex ( ?warna, '$kata', 'i')}
+  UNION {?tren rdf:type :Tren .
+              ?tren :memilikiTren ?produksi.
+              ?produksi rdf:type :Produksi .
+              OPTIONAL {?tren :Tahun ?tahun . }
+              OPTIONAL {?produksi :urlFoto ?foto . }
+              OPTIONAL {?produksi :Id ?id . }
+              OPTIONAL {?produksi :Jenis ?jenis . }
+              OPTIONAL {?produksi :Model ?model . }
+              OPTIONAL {?produksi :Warna ?warna . }
+              OPTIONAL {?produksi :Bahan ?bahan . }
+              FILTER
+              regex ( ?bahan, '$kata', 'i')}
+}
 								"; 
+}
 							$rows = $sc->query($q, 'rows');
 							$err = $sc->getErrors();
 							if ($err) {
@@ -178,81 +213,6 @@
                 </div>
                 </main>";
 						    }
-
-						else{
-							$fuseki_server = "http://localhost:3030"; // fuseki server address 
-							$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
-							$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
-							$sc = new SparqlClient();
-							$sc->setEndpointRead($endpoint);
-							$q = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-              PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-              PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-              PREFIX : <http://www.semanticweb.org/user/ontologies/2021/3/fashiongram#> 
-              SELECT ?tahun ?jenis ?model ?bahan ?warna ?foto ?id
-              WHERE { ?tren rdf:type :Tren .
-              ?tren :memilikiTren ?produksi.
-              ?produksi rdf:type :Produksi .
-              OPTIONAL {?tren :Tahun ?tahun . }
-              OPTIONAL {?produksi :Id ?id . }
-              OPTIONAL {?produksi :urlFoto ?foto . }
-              OPTIONAL {?produksi :Jenis ?jenis . }
-              OPTIONAL {?produksi :Model ?model . }
-              OPTIONAL {?produksi :Warna ?warna . }
-              OPTIONAL {?produksi :Bahan ?bahan . }
-              FILTER (regex ( ?jenis, '$keywords', 'i') || 
-              regex ( ?model, '$keywords', 'i') || 
-              regex ( ?warna, '$keywords', 'i') ||
-              regex ( ?bahan, '$keywords', 'i'))
-              FILTER ( ?tahun = '$tahun'^^xsd:integer ) }
-								"; 
-							$rows = $sc->query($q, 'rows');
-              //var_dump($rows);
-							$err = $sc->getErrors();
-							if ($err) {
-								print_r($err);
-								throw new Exception(print_r($err, true));
-							}
-							echo"
-                <fieldset>
-                <legend>Trend Fashion $keywords $tahun</legend>
-                </fieldset>";
-              
-              if(empty($rows["result"]["rows"])){
-                  echo"<fieldset>
-                  <legend>Data tidak ditemukan</legend>
-                  </fieldset>";
-                }
-                echo"
-                <main>
-                <div class='container-fluid bg-trasparent my-4 p-3' style='position: relative;'>
-                <div class='row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3'>";
-                foreach ($rows["result"]["rows"] as $row) {
-                $tahun=$row["tahun"];
-                $jenis=$row["jenis"];
-                $model=$row["model"];
-                $foto=$row["foto"];
-                $bahan=$row["bahan"];
-                $warna=$row["warna"];
-                $id=$row["id"];
-                echo"
-                <div class='col-3'>
-                <div class='card h-100 shadow-sm'> <img src='$foto' class='card-img-top' alt='...'>
-                <div class='card-body'>
-                <div class='clearfix mb-3'> <span class='float-start badge rounded-pill bg-primary'>$tahun</span></div>
-                <h5 class='card-subtitle'><b>$model</b></h5>
-                <p>$jenis</p>
-                <div class='text-center my-4'> <a href='detail.php?id=$id' class='btn btn-warning'>Detail</a>
-                </div>
-                </div>
-                </div>
-                </div>";
-                };
-                echo"
-                </div>
-                </div>
-                </main>";
-						}
 					?>
   </body>
 </html>

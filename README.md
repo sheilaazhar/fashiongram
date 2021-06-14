@@ -4,6 +4,8 @@ Fashiongram adalah aplikasi web semantik untuk pencarian trend fashion menggunak
 
 Aplikasi ini dibuat menggunakan Symfony 5 PHP Framework
 
+Sumber data trend fashion : https://www.thetrendspotter.net/
+
 ## Kelompok
 
 | NPM           | Name              | Role                                  |

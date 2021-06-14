@@ -114,7 +114,7 @@
                             ?produksi :Model ?model .
                             ?produksi :Warna ?warna .
                             ?produksi :Bahan ?bahan .
-                            }
+                            } ORDER BY RAND() LIMIT 8
 								"; 
 							$rows = $sc->query($q1, 'rows');
 							$err = $sc->getErrors();

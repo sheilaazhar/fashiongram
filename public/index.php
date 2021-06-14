@@ -30,12 +30,12 @@
           <div class="left">
             <div class="input-wrap first">
               <div class="input-field first">
-                <label>Type here....</label>
+                <label>Keywords (ex: category/model/material/color)</label>
                 <input
                   type="text"
                   name="keywords"
                   id="keywords"
-                  placeholder="ex: category/material/color"
+                  placeholder="Type here..."
                 />
               </div>
             </div>
@@ -67,7 +67,7 @@
               ?produksi :Jenis ?jenis .
               ?produksi :Model ?model .
               ?produksi :Warna ?warna .
-              ?produksi :Bahan ?bahan .}
+              ?produksi :Bahan ?bahan .} LIMIT 20
 								"; 
 							$rows = $sc->query($q, 'rows');
 							$err = $sc->getErrors();
