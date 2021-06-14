@@ -48,7 +48,7 @@
 						use BorderCloud\SPARQL\SparqlClient;
 						require_once('../vendor/autoload.php');
 
-            $fuseki_server = "http://31.220.62.156:3030/"; // fuseki server address 
+            $fuseki_server = "http://31.220.62.156:3030"; // fuseki server address 
 							$fuseki_sparql_db = "fashiongram"; // fuseki Sparql database 
 							$endpoint = $fuseki_server . "/" . $fuseki_sparql_db . "/query";	
 							$sc = new SparqlClient();
